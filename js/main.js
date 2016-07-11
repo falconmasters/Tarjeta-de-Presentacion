@@ -65,6 +65,12 @@ $(document).ready(function(){
 	});
 
 	// Agregamos un puntito por cada slide que tengamos
+	$('#info').children('.slide').each(function(){
+		$('#botones').append('<span>');
+	});
+
+	// Declaramos que el primer elemento inicie con su clase active
+	$('#botones').children('span').first().addClass('active');
 
 // ---------------------------------------
 // ----- Banner
