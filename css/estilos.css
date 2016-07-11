@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: url('../img/bg.png');
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+	font-family:'Open Sans',Sans-serif, Arial, Helvetica;
+}
+
+a {	text-decoration: none; }
+
+.contenedor {
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+
+.tarjeta {
+	margin:40px 0;
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+/* --------------------------------------- */
+/* ----- Slider Banner */
+/* --------------------------------------- */
+
+.slider_banner {
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+
+.slider_banner .banner {
+	position: relative;
+	width: 100%; 
+}
+
+.slider_banner .banner img {
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+.slider_banner .flecha-banner {
+	font-size: 35px;
+	line-height: 35px;
+	color: rgba(0,0,0,.2);
+	position: absolute;
+	top:50%;
+	z-index: 1100;
+}
+
+.slider_banner .flecha-banner:hover {
+	color: rgba(0,0,0,.5);
+}
+
+.slider_banner .flecha-banner.anterior {left: 20px;}
+.slider_banner .flecha-banner.siguiente {right: 20px;}
+
+/* --------------------------------------- */
+/* ----- Slider Info */
+/* --------------------------------------- */
+
+.slider_info {
+	text-align: center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+}
+
+/* Seccion Informacion */
+
+.slider_info .informacion {
+	width: 100%;
+}
+
+.slider_info .informacion article {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_info .informacion article .slide{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	padding: 20px 80px;
+	position: absolute;
+}
+/* Slider Flechas */
+
+.slider_info .flecha-info {
+	font-size: 35px;
+	line-height: 35px;
+	color: #e6e6e6;
+	position: absolute;
+	top:50%;
+	z-index: 1000;
+}
+
+.slider_info .flecha-info:hover {
+	color:#6ed279;
+}
+
+.slider_info .flecha-info.anterior {
+	left: 20px;
+}
+
+.slider_info .flecha-info.siguiente {
+	right: 20px;
+}
+
+
+/* Estilos para los Slide de Info */
+
+.slider_info .informacion .nombre {
+	color: #444444;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight:600;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .trabajo {
+	color: #55acee;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+
+.slider_info .informacion .pais {
+	color: #8d8d8d;
+	font-family: 14px;
+	line-height: 14px;
+}
+
+.slider_info .informacion .pais img {
+	position: relative;
+	top:2px;
+	margin-right: 10px;
+}
+
+.slider_info .informacion .texto {
+	color: #55acee;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.slider_info .informacion .subtitulo {
+	color: #444444;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 16px;
+}
+
+/* Botones Slider Info */
+
+.slider_info .informacion .botones {
+	width: 100%;
+}
+
+.slider_info .informacion .botones span {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	border-radius: 50%;
+	background:#e6e6e6;
+}
+
+.slider_info .informacion .botones .active {
+	background: #6ed279;
+}
+
+/* ----- ----- Redes Sociales ----- ----- */
+.redes-sociales {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.redes-sociales a {
+	display: inline-block;
+	font-style:20px;
+	width: 50px;
+	height: 50px;
+	font-line:20px;
+	padding: 14px 0;
+	border-radius: 50%;
+	color: #fff;
+	margin: 0 10px;
+}
+
+.redes-sociales .behance { background: #1769ff; }
+.redes-sociales .facebook { background: #3b5998; }
+.redes-sociales .twitter { background: #55acee; }
