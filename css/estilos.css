@@ -8,7 +8,7 @@
 
 body {
 	background: url('../img/bg.png');
-	-webkit-background-size: cover;
+	background-size: cover;
 	background-attachment: fixed;
 	font-family:'Open Sans',Sans-serif, Arial, Helvetica;
 }

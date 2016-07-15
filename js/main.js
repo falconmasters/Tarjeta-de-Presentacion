@@ -254,6 +254,8 @@ $(document).ready(function(){
 					'left': 0
 				});
 
+				$('#botones').children('.active').removeClass('active').prev().addClass('active');
+
 				// Reiniciamos la posicion a 1
 				info.posicion = info.posicion - 1;
 			} else {
@@ -274,6 +276,9 @@ $(document).ready(function(){
 				info.padre.children().last().addClass('active').animate({
 					'left': 0
 				});
+
+				$('#botones').children('.active').removeClass('active');
+				$('#botones').children('span').last().addClass('active');
 
 				// Reseteamos la posicion a 1
 				info.posicion = info.numeroSlides;
